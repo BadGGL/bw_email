@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    // 当前时间获取
+    function formatDate(date) {
+      var year = date.getFullYear();
+      var month = ("0" + (date.getMonth() + 1)).slice(-2);
+      var day = ("0" + date.getDate()).slice(-2);
+
+      return year + "-" + month + "-" + day;
+    }
+
+    // 商品--产品资料--邮件
+    function sendEmail1() {
+      var date = new Date();
+      var formattedDate = formatDate(date);
+      var recipient = "ellian.huang@baowei-info.com;chao.li@baowei-info.com;caifeng.ding@baowei-info.com";
+      var subject = formattedDate + "零售上架明细";
+      var body = "DEAR ALL:\n" + formattedDate + "周四零售上新表格已整理完成，为了不耽误运营规定时间内上架，麻烦请在这周五12点前完成资料整理并给到我们(匡威鞋类尺码和服饰类资料请优先给到)，如若数量超300以上，可分批给到，给到后我们将尽快填写资料并上架。";
+      var chao_song = "birong.dong@baowei-info.com;charlie.yao@baowei-info.com;vicky.li@baowei-info.com;jia.liuBW@baowei-info.com;Kevin.Xu@baowei-info.com"
+      var mailtoLink = "mailto:" + recipient + "&cc=" + chao_song + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      window.location.href = mailtoLink;
+    }
+
+    // 京东YY异常--邮件
+    function sendEmail2() {
+      var date = new Date();
+      var formattedDate = formatDate(date);
+      var recipient = "Wenjie.Lee@baowei-info.com";
+      var subject = formattedDate + "价格异常检核";
+      var body = "HI \n现看到京东YY店的商品价格异常，与其他店铺价格差别较大，麻烦核实下是否异常，如无问题请回复下，谢谢！";
+      var chao_song = "charlie.yao@baowei-info.com;Kevin.Xu@baowei-info.com;chen.jiang@baowei-info.com;birong.dong@baowei-info.com"
+      var mailtoLink = "mailto:" + recipient + "&cc=" + chao_song + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      window.location.href = mailtoLink;
+    }
+
+    // 拼多多宝唯运动专营店异常--邮件
+    function sendEmail3() {
+      var date = new Date();
+      var formattedDate = formatDate(date);
+      var recipient = "Huan.Zhang@baowei-info.com";
+      var subject = formattedDate + "价格异常检核";
+      var body = "HI \n拼多多宝唯运动专营店的商品价格异常，与其他店铺价格差别较大，麻烦核实下是否异常，如无问题请回复下，谢谢！";
+      var chao_song = "liyun.wang@baowei-info.com;charlie.yao@baowei-info.com;Kevin.Xu@baowei-info.com;birong.dong@baowei-info.com"
+      var mailtoLink = "mailto:" + recipient + "&cc=" + chao_song + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      window.location.href = mailtoLink;
+    }
+
+    // 斯凯奇(Skechers)运动官方授权店异常--邮件
+    function sendEmail4() {
+      var date = new Date();
+      var formattedDate = formatDate(date);
+      var recipient = "mingtian.an@baowei-info.com";
+      var subject = formattedDate + "价格异常检核";
+      var body = "HI \n现看到斯凯奇(Skechers)运动官方授权店的商品价格异常，与其他店铺价格差别较大，麻烦核实下是否异常，如无问题请回复下，谢谢！";
+      var chao_song = "charlie.yao@baowei-info.com;Kevin.Xu@baowei-info.com;chen.jiang@baowei-info.com;birong.dong@baowei-info.com;yu.zhu@baowei-info.com"
+      var mailtoLink = "mailto:" + recipient + "&cc=" + chao_song + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      window.location.href = mailtoLink;
+    }
+
+    // 天猫国际胜道异常--邮件
+    function sendEmail5() {
+      var date = new Date();
+      var formattedDate = formatDate(date);
+      var recipient = "Sophia.fan@baowei-info.com";
+      var subject = formattedDate + "价格异常检核";
+      var body = "HI \n天猫国际胜道店的商品价格异常，与其他店铺价格差别较大，麻烦核实下是否异常，如无问题请回复下，谢谢！";
+      var chao_song = "charlie.yao@baowei-info.com;Kevin.Xu@baowei-info.com;birong.dong@baowei-info.com;liyun.wang@baowei-info.com"
+      var mailtoLink = "mailto:" + recipient + "&cc=" + chao_song + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      window.location.href = mailtoLink;
+    }
+
+    // 抖音上海宝唯运动专营店异常--邮件
+    function sendEmail6() {
+      var date = new Date();
+      var formattedDate = formatDate(date);
+      var recipient = "fei.liBW@baowei-info.com";
+      var subject = formattedDate + "价格异常检核";
+      var body = "HI \n现看到抖音上海宝唯运动专营店的商品价格异常，与其他店铺价格差别较大，麻烦核实下是否异常，如无问题请回复下，谢谢！";
+      var chao_song = "charlie.yao@baowei-info.com;Kevin.Xu@baowei-info.com;birong.dong@baowei-info.com;hongtao.yu@baowei-info.com"
+      var mailtoLink = "mailto:" + recipient + "&cc=" + chao_song + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      window.location.href = mailtoLink;
+    }
+
+  </script>
+
+  <style>
+    button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 0;
+      /* 设置按钮上下间隔为20px */
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      text-decoration: none;
+      width: 300px;
+      /* 设置按钮宽度 */
+      height: 40px;
+      /* 设置按钮高度 */
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    .button:active {
+      background-color: #3e8e41;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--  商品资料邮件部分 -->
+  <div style="text-align: center;">
+    <h3>上架产品资料邮件发送</h3>
+    <button onclick="sendEmail1()">零售产品信息邮件</button>
+  </div>
+  <hr>
+  <!-- 价格检核邮件部分 -->
+  <div style="text-align: center;">
+    <h3>价格异常邮件发送</h3>
+    <button onclick="sendEmail2()">京东YY</button>
+    <br>
+    <button onclick="sendEmail3()">拼多多宝唯运动专营店</button>
+    <br>
+    <button onclick="sendEmail4()">斯凯奇(Skechers)运动官方授权店</button>
+    <br>
+    <button onclick="sendEmail5()">天猫国际胜道</button>
+    <br>
+    <button onclick="sendEmail6()">抖音上海宝唯运动专营店</button>
+
+  </div>
+
+</body>
+
+</html>
